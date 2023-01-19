@@ -1,0 +1,10 @@
+.button {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}

@@ -1,0 +1,25 @@
+.secondary-heading {
+  --secondary-heading-fz: 22px;
+  --secondary-heading-lh: 27px;
+  --secondary-heading-ff: "Lato", serif;
+  --secondary-heading-fs: normal;
+  --secondary-heading-fw: 900;
+  --secondary-heading-color: #333e50;
+
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: var(--secondary-heading-ff);
+  font-style: var(--secondary-heading-fs);
+  font-weight: var(--secondary-heading-fw);
+  font-size: var(--secondary-heading-fz);
+  line-height: var(--secondary-heading-lh);
+  color: var(--secondary-heading-color);
+}
+
+@media (min-width: 50em) {
+  .secondary-heading {
+    --secondary-heading-fz: 24px;
+    --secondary-heading-lh: 30px;
+  }
+}

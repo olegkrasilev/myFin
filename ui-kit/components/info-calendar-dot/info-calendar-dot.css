@@ -1,0 +1,9 @@
+.info__calendar-dot {
+  min-width: 5px;
+  min-height: 5px;
+  border-radius: 50%;
+}
+
+.info__calendar-dot--red {
+  background-color: #ed2c35;
+}

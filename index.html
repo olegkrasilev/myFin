@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="selectric.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page">
+    <!-- Start obligation -->
+    <section class="obligation">
+      <div class="container">
+        <div class="obligation__wrapper">
+          <div class="obligation__inner">
+            <h1 class="obligation__heading main-heading">Облигации в России</h1>
+            <p
+              class="obligation__paragraph paragraph obligation__paragraph--isHidden"
+            >
+              Облигации федерального, субфедерального займа, еврооблигации и
+              облигации самых известных компаний<span
+                id="obligation__paragraph-dots"
+                class="obligation__paragraph-dots"
+                >...</span
+              ><span
+                id="obligation__paragraph-more"
+                class="obligation__paragraph-more"
+              >
+                России. Изучайте стоимость облигаций и ее изменение, доходность,
+                купонные выплаты и многие другие показатели. Чтобы узнать больше
+                про облигации и инвестирование в ценные бумаги, посетите наш
+                <a class="link" href="/">образовательный раздел</a> с множеством
+                полезной информации.
+              </span>
+            </p>
+            <button id="obligation__button" class="obligation__button button">
+              <span>Показать весь</span>
+              <img
+                src="./assets/arrow.svg"
+                width="10"
+                height="11"
+                alt="Показать больше"
+              />
+            </button>
+          </div>
+          <img
+            class="obligation__img"
+            src="./assets/stock.svg"
+            alt="График акций"
+            width="120"
+            height="120"
+            loading="eager"
+          />
+        </div>
+        <div class="input-wrapper">
+          <input
+            id="input"
+            class="input"
+            type="text"
+            placeholder="Название или тикер"
+          />
+          <button
+            id="input-wrapper__button"
+            class="button input-wrapper__button"
+            aria-label="Стереть текст"
+          >
+            <img
+              src="./assets/close-btn.svg"
+              width="20"
+              height="20"
+              alt="Стереть текст"
+            />
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- End obligation -->
+
+    <!-- Start About -->
+    <!-- End About -->
+    <section class="about">
+      <div class="container">
+        <h2 class="secondary-heading about__secondary-heading">
+          Все об инвестициях
+        </h2>
+        <div class="about__wrapper">
+          <div class="about__wrapper-item-1 card">
+            <h3 class="card-heading about__card-heading">Акции</h3>
+            <p class="paragraph about__paragraph">
+              Покупка акций российских и мировых компаний
+            </p>
+            <button class="button button-primary-green">Купить</button>
+          </div>
+          <div class="about__wrapper-item-2 card">
+            <h3 class="card-heading about__card-heading">Облигации</h3>
+            <p class="paragraph about__paragraph">
+              Инвестируйте в ценные бумаги и зарабатывайте на процентах
+            </p>
+            <button class="button button-primary-green">Подобрать</button>
+          </div>
+          <div class="about__wrapper-item-3 card">
+            <h3 class="card-heading about__card-heading">Дивиденды</h3>
+            <p class="paragraph about__paragraph">
+              Размеры дивидендов и даты выплат на календаре
+            </p>
+            <button class="button button-primary-white">Подробнее</button>
+          </div>
+          <div class="about__wrapper-item-4 card">
+            <h3 class="card-heading about__card-heading">
+              Индивидуальный инвестиционный счет
+            </h3>
+            <p class="paragraph about__paragraph">
+              Откройте счет и увеличивайте доходность своих инвестиций
+            </p>
+            <button class="button button-primary-green">Открыть ИИС</button>
+          </div>
+          <div class="about__wrapper-item-5 card">
+            <h3 class="card-heading about__card-heading">Брокеры</h3>
+            <p class="paragraph about__paragraph">
+              Инвестируйте вместе с профессионалами.
+            </p>
+            <button class="button button-primary-white">Выбрать</button>
+          </div>
+          <div class="about__wrapper-item-6 card">
+            <h3 class="card-heading about__card-heading">Обучение</h3>
+            <p class="paragraph about__paragraph">
+              Учитесь инвестировать БЕСПЛАТНО вместе с Банкирос
+            </p>
+            <button class="button button-primary-white">Пройти обучение</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start info -->
+    <!-- End info -->
+    <section class="info">
+      <div class="container">
+        <div class="info__wrapper">
+          <div class="info__stock">
+            <div class="card info__stock-card">
+              <div class="info__stock-wrapper">
+                <h4 class="card-heading info__card-heading">Акции</h4>
+                <!-- Стили менялись в   <link rel="stylesheet" href="selectric.css" /> -->
+                <select class="info__stock-select">
+                  <option value="">1 день</option>
+                  <option value="2 день">2 день</option>
+                </select>
+                <!-- Стили менялись в   <link rel="stylesheet" href="selectric.css" /> -->
+              </div>
+              <!-- Tabs -->
+              <div class="info__stock-tabs">
+                <button
+                  id="info__stock-leaders-tab"
+                  class="button info__stock-tab info__stock-tab--isActive"
+                >
+                  Лидеры роста
+                </button>
+                <button
+                  id="info__stock-leaders-inactive"
+                  class="button info__stock-tab info__stock-tab--isNotActive"
+                >
+                  Tab Inactive
+                </button>
+              </div>
+              <!-- Tabs -->
+              <!-- Tab Content -->
+              <div
+                id="info__stock-tab-content-leaders"
+                class="info__stock-tab-content"
+              >
+                <ul class="info__stock-list">
+                  <li class="info__stock-item info__stock-item-heading">
+                    <span class="date-muted">Тикер</span>
+                    <span class="date-muted">Посл. цена</span>
+                    <span
+                      class="date-muted info__stock-item-heading--align-right"
+                      >Изм.</span
+                    >
+                  </li>
+                  <li class="info__stock-item info__stock-item-content">
+                    <div class="info__stock-bank-wrapper">
+                      <img
+                        src="assets/bank-logo.svg"
+                        width="30"
+                        height="30"
+                        alt="Логотип Банка"
+                        loading="lazy"
+                      />
+                      <div>
+                        <h5 class="info__stock-bank-name link">ВТБ банк</h5>
+                        <div class="info__stock-bank-group date-muted">
+                          VTBR
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info__stock-price paragraph">18.24 ₽</div>
+                    <div class="info__stock-changes">
+                      <div class="info__stock-changes-wrapper">
+                        <img
+                          src="./assets/arrow-up.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt="Цена вверх"
+                        />
+                        <span class="info__stock-changes-percents"
+                          >138.75 %</span
+                        >
+                      </div>
+                      <div class="info__stock-changes-amount">4.90 ₽</div>
+                    </div>
+                  </li>
+                  <li class="info__stock-item info__stock-item-content">
+                    <div class="info__stock-bank-wrapper">
+                      <img
+                        src="assets/bank-logo.svg"
+                        width="30"
+                        height="30"
+                        alt="Логотип Банка"
+                        loading="lazy"
+                      />
+                      <div>
+                        <h5 class="info__stock-bank-name link">ВТБ банк</h5>
+                        <div class="info__stock-bank-group date-muted">
+                          VTBR
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info__stock-price paragraph">18.24 ₽</div>
+                    <div class="info__stock-changes">
+                      <div class="info__stock-changes-wrapper">
+                        <img
+                          src="./assets/arrow-down.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt="Цена вверх"
+                        />
+                        <span
+                          class="info__stock-changes-percents info__stock-changes-percents--decreased"
+                          >138.75 %</span
+                        >
+                      </div>
+                      <div
+                        class="info__stock-changes-amount info__stock-changes-percents--decreased"
+                      >
+                        4.90 ₽
+                      </div>
+                    </div>
+                  </li>
+                  <li class="info__stock-item info__stock-item-content">
+                    <div class="info__stock-bank-wrapper">
+                      <img
+                        src="assets/bank-logo.svg"
+                        width="30"
+                        height="30"
+                        alt="Логотип Банка"
+                        loading="lazy"
+                      />
+                      <div>
+                        <h5 class="info__stock-bank-name link">ВТБ банк</h5>
+                        <div class="info__stock-bank-group date-muted">
+                          VTBR
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info__stock-price paragraph">18.24 ₽</div>
+                    <div class="info__stock-changes">
+                      <div class="info__stock-changes-wrapper">
+                        <img
+                          src="./assets/arrow-up.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt="Цена вверх"
+                        />
+                        <span class="info__stock-changes-percents"
+                          >138.75 %</span
+                        >
+                      </div>
+                      <div class="info__stock-changes-amount">4.90 ₽</div>
+                    </div>
+                  </li>
+                  <li class="info__stock-item info__stock-item-content">
+                    <div class="info__stock-bank-wrapper">
+                      <img
+                        src="assets/bank-logo.svg"
+                        width="30"
+                        height="30"
+                        alt="Логотип Банка"
+                        loading="lazy"
+                      />
+                      <div>
+                        <h5 class="info__stock-bank-name link">ВТБ банк</h5>
+                        <div class="info__stock-bank-group date-muted">
+                          VTBR
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info__stock-price paragraph">18.24 ₽</div>
+                    <div class="info__stock-changes">
+                      <div class="info__stock-changes-wrapper">
+                        <img
+                          src="./assets/arrow-down.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt="Цена вверх"
+                        />
+                        <span
+                          class="info__stock-changes-percents info__stock-changes-percents--decreased"
+                          >138.75 %</span
+                        >
+                      </div>
+                      <div
+                        class="info__stock-changes-amount info__stock-changes-percents--decreased"
+                      >
+                        4.90 ₽
+                      </div>
+                    </div>
+                  </li>
+                  <li class="info__stock-item info__stock-item-content">
+                    <div class="info__stock-bank-wrapper">
+                      <img
+                        src="assets/bank-logo.svg"
+                        width="30"
+                        height="30"
+                        alt="Логотип Банка"
+                        loading="lazy"
+                      />
+                      <div>
+                        <h5 class="info__stock-bank-name link">ВТБ банк</h5>
+                        <div class="info__stock-bank-group date-muted">
+                          VTBR
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info__stock-price paragraph">18.24 ₽</div>
+                    <div class="info__stock-changes">
+                      <div class="info__stock-changes-wrapper">
+                        <img
+                          src="./assets/arrow-up.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt="Цена вверх"
+                        />
+                        <span class="info__stock-changes-percents"
+                          >138.75 %</span
+                        >
+                      </div>
+                      <div class="info__stock-changes-amount">4.90 ₽</div>
+                    </div>
+                  </li>
+                  <li class="info__stock-item info__stock-item-content">
+                    <div class="info__stock-bank-wrapper">
+                      <img
+                        src="assets/bank-logo.svg"
+                        width="30"
+                        height="30"
+                        alt="Логотип Банка"
+                        loading="lazy"
+                      />
+                      <div>
+                        <h5 class="info__stock-bank-name link">ВТБ банк</h5>
+                        <div class="info__stock-bank-group date-muted">
+                          VTBR
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info__stock-price paragraph">18.24 ₽</div>
+                    <div class="info__stock-changes">
+                      <div class="info__stock-changes-wrapper">
+                        <img
+                          src="./assets/arrow-down.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt="Цена вверх"
+                        />
+                        <span
+                          class="info__stock-changes-percents info__stock-changes-percents--decreased"
+                          >138.75 %</span
+                        >
+                      </div>
+                      <div
+                        class="info__stock-changes-amount info__stock-changes-percents--decreased"
+                      >
+                        4.90 ₽
+                      </div>
+                    </div>
+                  </li>
+                  <li class="info__stock-item info__stock-item-content">
+                    <div class="info__stock-bank-wrapper">
+                      <img
+                        src="assets/bank-logo.svg"
+                        width="30"
+                        height="30"
+                        alt="Логотип Банка"
+                        loading="lazy"
+                      />
+                      <div>
+                        <h5 class="info__stock-bank-name link">ВТБ банк</h5>
+                        <div class="info__stock-bank-group date-muted">
+                          VTBR
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info__stock-price paragraph">18.24 ₽</div>
+                    <div class="info__stock-changes">
+                      <div class="info__stock-changes-wrapper">
+                        <img
+                          src="./assets/arrow-up.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt="Цена вверх"
+                        />
+                        <span class="info__stock-changes-percents"
+                          >138.75 %</span
+                        >
+                      </div>
+                      <div class="info__stock-changes-amount">4.90 ₽</div>
+                    </div>
+                  </li>
+                  <li class="info__stock-item info__stock-item-content">
+                    <div class="info__stock-bank-wrapper">
+                      <img
+                        src="assets/bank-logo.svg"
+                        width="30"
+                        height="30"
+                        alt="Логотип Банка"
+                        loading="lazy"
+                      />
+                      <div>
+                        <h5 class="info__stock-bank-name link">ВТБ банк</h5>
+                        <div class="info__stock-bank-group date-muted">
+                          VTBR
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info__stock-price paragraph">18.24 ₽</div>
+                    <div class="info__stock-changes">
+                      <div class="info__stock-changes-wrapper">
+                        <img
+                          src="./assets/arrow-down.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt="Цена вверх"
+                        />
+                        <span
+                          class="info__stock-changes-percents info__stock-changes-percents--decreased"
+                          >138.75 %</span
+                        >
+                      </div>
+                      <div
+                        class="info__stock-changes-amount info__stock-changes-percents--decreased"
+                      >
+                        4.90 ₽
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div id="tabInactive" class="info__stock-tab-content">
+                No content provided...
+              </div>
+              <div class="info__stock-showmore-wrapper">
+                <a class="link" href="/"
+                  >Больше лидеров роста &nbsp;
+                  <img
+                    src="./assets/arrow.svg"
+                    width="10"
+                    height="11"
+                    alt="Показать больше"
+                /></a>
+                <span class="date-muted">Обновлено в 12:30</span>
+              </div>
+
+              <!-- Tab Content -->
+            </div>
+          </div>
+          <div class="info__calendar">
+            <div class="card info__calendar-card">
+              <h4 class="card-heading info__card-heading">
+                Экономический календарь
+              </h4>
+              <time class="date-muted info__date-muted">Ноябрь 17</time>
+              <ul class="info__calendar-list">
+                <li class="info__calendar-item">
+                  <time class="info__calendar-time info__calendar-time--urgent"
+                    >13:00</time
+                  >
+                  <img
+                    src="./assets/russia-flag.svg"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt="Флаг Росии"
+                  />
+                  <span
+                    class="info__calendar-dot info__calendar-dot--red"
+                  ></span>
+                  <p class="paragraph">Индекс цен на продовольствие</p>
+                </li>
+                <li class="info__calendar-item">
+                  <time class="info__calendar-time">13:00</time>
+                  <img
+                    src="./assets/russia-flag.svg"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt="Флаг Росии"
+                  />
+                  <span
+                    class="info__calendar-dot info__calendar-dot--red"
+                  ></span>
+                  <p class="paragraph">Индекс цен на продовольствие</p>
+                </li>
+                <li class="info__calendar-item">
+                  <time class="info__calendar-time info__calendar-time--urgent"
+                    >13:00</time
+                  >
+                  <img
+                    src="./assets/russia-flag.svg"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt="Флаг Росии"
+                  />
+                  <span
+                    class="info__calendar-dot info__calendar-dot--red"
+                  ></span>
+                  <p class="paragraph">Индекс цен на продовольствие</p>
+                </li>
+                <li class="info__calendar-item">
+                  <time class="info__calendar-time">13:00</time>
+                  <img
+                    src="./assets/russia-flag.svg"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt="Флаг Росии"
+                  />
+                  <span
+                    class="info__calendar-dot info__calendar-dot--red"
+                  ></span>
+                  <p class="paragraph">Индекс цен на продовольствие</p>
+                </li>
+                <li class="info__calendar-item">
+                  <time class="info__calendar-time info__calendar-time--urgent"
+                    >13:00</time
+                  >
+                  <img
+                    src="./assets/russia-flag.svg"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt="Флаг Росии"
+                  />
+                  <span
+                    class="info__calendar-dot info__calendar-dot--red"
+                  ></span>
+                  <p class="paragraph">Индекс цен на продовольствие</p>
+                </li>
+                <li class="info__calendar-item">
+                  <time class="info__calendar-time">13:00</time>
+                  <img
+                    src="./assets/russia-flag.svg"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt="Флаг Росии"
+                  />
+                  <span
+                    class="info__calendar-dot info__calendar-dot--red"
+                  ></span>
+                  <p class="paragraph">Индекс цен на продовольствие</p>
+                </li>
+                <li class="info__calendar-item">
+                  <time class="info__calendar-time info__calendar-time--urgent"
+                    >13:00</time
+                  >
+                  <img
+                    src="./assets/russia-flag.svg"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt="Флаг Росии"
+                  />
+                  <span
+                    class="info__calendar-dot info__calendar-dot--red"
+                  ></span>
+                  <p class="paragraph">Индекс цен на продовольствие</p>
+                </li>
+                <li class="info__calendar-item">
+                  <time class="info__calendar-time">13:00</time>
+                  <img
+                    src="./assets/russia-flag.svg"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt="Флаг Росии"
+                  />
+                  <span
+                    class="info__calendar-dot info__calendar-dot--red"
+                  ></span>
+                  <p class="paragraph">Индекс цен на продовольствие</p>
+                </li>
+                <li class="info__calendar-item">
+                  <time class="info__calendar-time info__calendar-time--urgent"
+                    >13:00</time
+                  >
+                  <img
+                    src="./assets/russia-flag.svg"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt="Флаг Росии"
+                  />
+                  <span
+                    class="info__calendar-dot info__calendar-dot--red"
+                  ></span>
+                  <p class="paragraph">Индекс цен на продовольствие</p>
+                </li>
+                <li class="info__calendar-item">
+                  <time class="info__calendar-time">13:00</time>
+                  <img
+                    src="./assets/russia-flag.svg"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt="Флаг Росии"
+                  />
+                  <span
+                    class="info__calendar-dot info__calendar-dot--red"
+                  ></span>
+                  <p class="paragraph">Индекс цен на продовольствие</p>
+                </li>
+              </ul>
+              <a class="link" href="/"
+                >Показать больше &nbsp;
+                <img
+                  src="./assets/arrow.svg"
+                  width="10"
+                  height="11"
+                  alt="Показать больше"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="jquery.selectric.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

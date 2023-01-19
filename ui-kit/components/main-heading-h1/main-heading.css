@@ -1,0 +1,25 @@
+.main-heading {
+  --main-heading-fz: 26px;
+  --main-heading-lh: 32px;
+  --main-heading-ff: "Lato", serif;
+  --main-heading-fs: normal;
+  --main-heading-fw: 900;
+  --main-heading-color: #333e50;
+
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: var(--main-heading-ff);
+  font-style: var(--main-heading-fs);
+  font-weight: var(--main-heading-fw);
+  font-size: var(--main-heading-fz);
+  line-height: var(--main-heading-lh);
+  color: var(--main-heading-color);
+}
+
+@media (min-width: 50em) {
+  .main-heading {
+    --main-heading-fz: 36px;
+    --main-heading-lh: 30px;
+  }
+}

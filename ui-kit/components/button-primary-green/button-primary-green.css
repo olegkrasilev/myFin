@@ -1,0 +1,31 @@
+.button-primary-green {
+  background-color: #95ce5a;
+  -webkit-box-shadow: 0px 5px 10px rgba(149, 206, 90, 0.4);
+  box-shadow: 0px 5px 10px rgba(149, 206, 90, 0.4);
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  padding: 10px 20px;
+}
+
+.button-primary-green:hover {
+  background-color: #8cc459;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button-primary-green:focus {
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  background-color: #95ce5a;
+  border: 1px solid #333e50;
+}

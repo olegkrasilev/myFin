@@ -1,0 +1,228 @@
+.info {
+  -webkit-padding-after: 30px;
+  padding-block-end: 30px;
+}
+
+.info__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info__card-heading {
+  margin-bottom: 20px;
+}
+.info__date-muted {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Stock styles */
+.info__stock-card,
+.info__calendar-card {
+  height: 100%;
+}
+
+.info__stock-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.info__stock-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.info__stock-tab {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333e50;
+  padding-bottom: 10px;
+}
+
+.info__stock-tab--isActive {
+  border-bottom: 3px solid #95ce5a;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.info__stock-tab--isNotActive {
+  color: #adb4bf;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.info__stock-list {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.info__stock-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 25% 35%;
+  grid-template-columns: 40% 25% 35%;
+}
+
+.info__stock-item-heading {
+  border-top: 1px solid #e8ecef;
+  border-bottom: 1px solid #e8ecef;
+  padding: 15px 0;
+}
+
+.info__stock-item-heading--align-right {
+  text-align: right;
+}
+
+.info__stock-item-content {
+  border-bottom: 1px solid #e8ecef;
+  padding: 10px 0;
+}
+
+.info__stock-bank-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.info__stock-bank-name {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.info__stock-changes-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.info__stock-changes-amount {
+  text-align: right;
+}
+
+.info__stock-changes-percents,
+.info__stock-changes-amount {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7fc03c;
+}
+
+.info__stock-changes-percents--decreased,
+.info__stock-changes-amount----decreased {
+  color: #ed2c35;
+}
+
+.info__stock-showmore-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 20px;
+}
+/* Stock styles */
+
+/* Calendar styles */
+.info__calendar-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-top: 1px solid #e8ecef;
+}
+
+.info__calendar-list {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.info__calendar-time {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 5px;
+  line-height: 15px;
+  color: #333e50;
+}
+
+.info__calendar-time--urgent {
+  background: #ffe6e7;
+  border-radius: 50px;
+}
+
+/* Calendar styles */
+
+@media (min-width: 50em) {
+  .info {
+    -webkit-padding-after: 40px;
+    padding-block-end: 40px;
+  }
+
+  .info__wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 30px 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .info__calendar-list {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+  }
+}

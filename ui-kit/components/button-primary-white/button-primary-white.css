@@ -1,0 +1,24 @@
+.button-primary-white {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #dadee2;
+  font-family: "Lato", sans-serif;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333e50;
+  padding: 10px 20px;
+}
+
+.button-primary-white:hover,
+.button-primary-white:focus {
+  background: #ffffff;
+  border: 1px solid #333e50;
+  -webkit-transition: border 0.3s ease-in-out;
+  -o-transition: border 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out;
+}

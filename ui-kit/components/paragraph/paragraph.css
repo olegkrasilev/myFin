@@ -1,0 +1,19 @@
+.paragraph {
+  --paragraph-fz: 16px;
+  --paragraph-lh: 150%;
+  --paragraph-ff: "Lato", serif;
+  --paragraph-fs: normal;
+  --paragraph-fw: 400;
+  --paragraph-color: #333e50;
+
+  -webkit-box-sizing: border-box;
+
+  box-sizing: border-box;
+  margin: 0;
+  font-family: var(--paragraph-ff);
+  font-style: var(--paragraph-fs);
+  font-weight: var(--paragraph-fw);
+  font-size: var(--paragraph-fz);
+  line-height: var(--paragraph-lh);
+  color: var(--paragraph-color);
+}
